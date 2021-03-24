@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/mapTable-min.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    animation: drop 1.7s;
+}
+
+nav {
+    flex: 1;
+    padding: 60px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-shadow: #333;
+    text-decoration: none;
+}
+
+.contact_us {
+    left: -20px;
+    position: fixed;
+    align-items: center;
+    bottom: 10px;
+    width: 100%;
+    animation: drop 1.7s;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    float: right;
+    border-radius: 15px;
+    background-color: black;
+    padding-top: 10px;
+}
+
+.btn a:hover {
+    text-decoration: underline;
+}
+
+.btn1 {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sticky-container{
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    right: 0px;
+    top: 230px;
+    width: 50px;
+    z-index: 1100;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+}
+.sticky li{
+    list-style-type: none;
+    background-color: black;
+    height: 43px;
+    padding: 0px;
+    margin: 0px 0px 1px 0px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+.sticky li:hover{
+    margin-left: -115px;
+}
+
+.fa {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    margin-top: 12px;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        transform: translateX(-70px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        transform: translateX(70px)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    .content {
+        margin-left: 36%;
+        margin-top: 16%;
+    }
+
+    .btn {
+        margin-top: 55%;
+    }
+}
